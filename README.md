@@ -158,9 +158,7 @@ The two input variables, **angle and thickness**, together with their lower and 
 
 ### 5.3 Pareto-Optimal Solutions
 
-The **Non-dominated Sorting Genetic Algorithm II (NSGA-II)** is initialized with defined termination criteria to solve the multi-objective optimization problem.
-
-The resulting optimal input-feature combinations and their corresponding objective function values are plotted to illustrate the **design space** and **feasible objective space**, as shown in figures {Design Space} and {Objective Space}, respectively.
+The **Non-dominated Sorting Genetic Algorithm II (NSGA-II)** is initialized with defined termination criteria to solve the multi-objective optimization problem. The resulting optimal input-feature combinations and their corresponding objective function values are plotted to illustrate the **design space** and **feasible objective space**, as shown in figures {Design Space} and {Objective Space}, respectively.
 
 The non-dominated solutions where the two objectives are given equal importance and considered simultaneously, are also plotted against the FE simulation data to illustrate the resulting **Pareto front**, as shown in figure {Pareto front visualization}.
 
@@ -168,7 +166,7 @@ The non-dominated solutions where the two objectives are given equal importance 
 
 The overall workflow developed in this project combines **automated FE simulation, crashworthiness data extraction, surrogate modeling and multi-objective optimization**.
 
-The resulting framework enables the exploration of different rocker sill design configurations without requiring a new FE simulation for every candidate solution generated during the optimization process. The surrogate models provide the predictions required by the optimization function, while the **NSGA-II algorithm** identifies a set of non-dominated design solutions satisfying the defined deformation constraint.
+The resulting framework enables the exploration of different rocker sill design configurations without requiring a new FE simulation for every candidate solution generated during the optimization process. The surrogate models provide the predictions required by the optimization function, while the NSGA-II algorithm identifies a set of non-dominated design solutions satisfying the defined deformation constraint.
 
 The final design space and objective-space results provide a set of feasible rocker sill configurations representing different trade-offs between **peak impact force and energy absorption**, with the corresponding Pareto front providing a basis for selecting an appropriate design configuration.
 
