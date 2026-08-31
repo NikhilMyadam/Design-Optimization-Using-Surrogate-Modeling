@@ -30,3 +30,17 @@ This project investigates the optimal design configurations of a **vehicle rocke
 The dynamic bending performance of the rocker sill assembly is investigated using a **multi-objective optimization approach** that combines physics-based **finite element (FE) simulations** with **surrogate modeling techniques**.
 
 A surrogate-based optimization function is formulated using engineering constraints, and evolutionary algorithms are used to explore the design space and generate a diverse set of solutions that simultaneously optimize multiple, conflicting crashworthiness objectives.
+
+## 2. Problem Statement
+
+Vehicle design is a multidisciplinary process in which numerical simulations play a central role. Among the various disciplines involved, **crashworthiness** is critical to vehicle development because it evaluates the structural performance of the **body-in-white (BIW)** and its ability to protect occupants during a collision.
+
+Among several crash scenarios, lateral vehicle collisions have received increased attention in recent years. According to Euro NCAP, vehicles are tested by impacting them against a fixed, rigid pole with a diameter of 254 mm (10 inches). The vehicle travels at a speed up to and including 32 km/h (20 mph) and is positioned at an angle of 75° formed by the impact reference line with the vertical plane through the centre of gravity of the head of the dummy in the driver seating position. The test condition is depicted in {test condition}.
+
+This study focuses on optimizing the design of a rocker sill assembly for a **Class B battery electric vehicle (BEV)** subjected to an oblique pole side impact.
+
+The available design volume of the rocker sill assembly is constrained by the overall vehicle architecture and is derived by considering:
+
+1. Battery size and shape
+2. Passenger seating position
+3. Other BIW modules, such as the central compartment floor position
