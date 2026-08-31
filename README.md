@@ -59,3 +59,34 @@ Two design variables are considered:
 - **Thickness** - the component parameter defining the panel thickness
 
 The baseline model, including the design variables, is depicted in {baseline rocker sill FE model}.
+
+### 3.2 Crashworthiness Metrics
+
+During a side pole impact, several structural components of the BIW, including the rocker sill assembly, act as major load-bearing components. Their structural performance can be evaluated using different crashworthiness metrics.
+
+In this study, **peak impact force (PCF)** and **energy absorption (EA)** are selected as the output variables for optimization. The rocker sill assembly is required to absorb at least **15% of the energy observed during the side pole impact**.
+
+The design optimization is performed using a representative structural loading scenario. Crashworthiness evaluation is conducted using FE simulations that mimic a **three-point bending test procedure**, given its similarity to impactor test and drop test validation processes commonly used in industry.
+
+### 3.3 FE Model
+
+The FE model information used for the representative oblique pole side impact simulations is summarized below.
+
+| Property | Values |
+| --- | --- |
+| **Geometry** | Each rocker sill panel is modeled using 6 geometrical points (engineer's choice) |
+| | Cylindrical pole modeled as a rigid impactor |
+| **Material** | Dual-phase (DP) 780 Steel |
+| | Density - 7890 kg/m³ |
+| | Young's Modulus - 200 GPa |
+| | Poisson's Ratio - 0.3 |
+| | Yield Stress - 500 MPa |
+| **FE Mesh** | Element type for sill assembly - S4R Shell elements |
+| | Element size for sill assembly - 6 mm |
+| | Element type for rigid impactor - R3D4 Rigid elements |
+| | Element size for rigid impactor - 15 mm |
+| **Simulation Time** | 90 ms |
+| **Contact Formulation** | Frictional interaction with a 'Hard' contact normal behavior (friction coefficient = 0.25) |
+| | Tie constraints used to model spot welds |
+| **Boundary Conditions** | Rocker sill assembly ends fixed |
+| | The 100 kg rigid impactor given an impact velocity of 13 m/s |
