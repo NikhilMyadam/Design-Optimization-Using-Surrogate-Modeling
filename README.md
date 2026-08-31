@@ -90,3 +90,25 @@ The FE model information used for the representative oblique pole side impact si
 | | Tie constraints used to model spot welds |
 | **Boundary Conditions** | Rocker sill assembly ends fixed |
 | | The 100 kg rigid impactor given an impact velocity of 13 m/s |
+
+### 3.4 Automated FE Simulation and Database Generation
+
+Python scripts were developed to conduct the FE crash simulations in **Abaqus CAE (version 2021)**. The design variables, defined by the **angle** and **thickness** attributes, are encoded within the scripts to automate the generation of FE models representing different design configurations. These scripts are stored in the `fe_model` folder.
+
+The Python script `model_w_output_data_95_degrees` generates the crashworthiness database for a rocker sill assembly with an angle of **95°** and different assembly thicknesses. For each FE job corresponding to a specific thickness value, a `Dynamic_Job-ID_Energies_CFNs` CSV file is generated. This file contains the evolution of energies, contact normal forces and displacements over the simulation time steps, where `ID` represents the job ID. After all thickness values have been iterated and the corresponding FE jobs completed, the `model_database_95degrees_dynamic_impact_sims` CSV file is generated. This file contains information about all FE models, including the rocker sill angle and thickness, the mesh sizes used for the sill assembly and rigid impactor, and the time required to perform each FE job.
+
+The Python script `calculating_objective_functions` calculates the required output variables, including **peak impact force, total deformation and energy absorbed by the sill assembly**, by reading each `Dynamic_Job-ID_Energies_CFNs` CSV file.
+
+The calculated values for each FE job are appended to the `model_database_95degrees_dynamic_impact_sims` CSV file to generate the `MODELS_DATABASE_95degrees` database, available in both CSV and XLSX formats. This database contains the FE model information with the calculated output variables.
+
+The Python script `output_data_to_graphs` is used to visualize the evolution of **contact normal forces, displacements and energies** over the simulation time steps. The script reads the corresponding `Dynamic_Job-ID_Energies_CFNs` CSV files to generate these visualizations.
+
+Thus, the workflow for creating the database corresponding to a **95° rocker sill angle** is:
+
+1. Perform all FE jobs using the `model_w_output_data_95_degrees` script.
+2. Calculate the output variables using the `calculating_objective_functions` script.
+3. Visualize the FE model output variables using the `output_data_to_graphs` script.
+
+The same process is repeated for the other rocker sill angles, generating individual `MODELS_DATABASE_{angle}` CSV and XLSX files, where `{angle}` represents the rocker sill angle.
+
+Finally, the `xgb_models_database` script is used to create the complete `XGB_MODELS_DATABASE` database by combining all `MODELS_DATABASE_{angle}` CSV files and removing redundant information. This resulting database contains the design variables' information in **length, angle and thickness**, along with the output variables' information in **peak impact force, total deformation and energy absorbed**.
