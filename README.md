@@ -95,11 +95,9 @@ The FE model information used for the representative oblique pole side impact si
 
 Python scripts were developed to conduct the FE crash simulations in **Abaqus CAE (version 2021)**. The design variables, defined by the **angle** and **thickness** attributes, are encoded within the scripts to automate the generation of FE models representing different design configurations. These scripts are stored in the `fe_model` folder.
 
-The Python script `model_w_output_data_95_degrees` generates the crashworthiness database for a rocker sill assembly with an angle of **95°** and different assembly thicknesses. For each FE job corresponding to a specific thickness value, a `Dynamic_Job-ID_Energies_CFNs` CSV file is generated. This file contains the evolution of energies, contact normal forces and displacements over the simulation time steps, where `ID` represents the job ID. After all thickness values have been iterated and the corresponding FE jobs completed, the `model_database_95degrees_dynamic_impact_sims` CSV file is generated. This file contains information about all FE models, including the rocker sill angle and thickness, the mesh sizes used for the sill assembly and rigid impactor, and the time required to perform each FE job.
+The Python script `model_w_output_data_95_degrees` generates the crashworthiness database for a rocker sill assembly with an angle of **95°** and **different assembly thicknesses**. For each FE job corresponding to a specific thickness value, a `Dynamic_Job-ID_Energies_CFNs` CSV file is generated. This file contains the evolution of energies, contact normal forces and displacements over the simulation time steps, where `ID` represents the job ID. After all thickness values have been iterated and the corresponding FE jobs completed, the `model_database_95degrees_dynamic_impact_sims` CSV file is generated. This file contains information about all FE models, including the rocker sill angle and thickness, the mesh sizes used for the sill assembly and rigid impactor, and the time required to perform each FE job.
 
-The Python script `calculating_objective_functions` calculates the required output variables, including **peak impact force, total deformation and energy absorbed by the sill assembly**, by reading each `Dynamic_Job-ID_Energies_CFNs` CSV file.
-
-The calculated values for each FE job are appended to the `model_database_95degrees_dynamic_impact_sims` CSV file to generate the `MODELS_DATABASE_95degrees` database, available in both CSV and XLSX formats. This database contains the FE model information with the calculated output variables.
+The Python script `calculating_objective_functions` calculates the required output variables, including **peak impact force, total deformation and energy absorbed by the sill assembly**, by reading each `Dynamic_Job-ID_Energies_CFNs` CSV file. The calculated values for each FE job are appended to the `model_database_95degrees_dynamic_impact_sims` CSV file to generate the `MODELS_DATABASE_95degrees` database, available in both CSV and XLSX formats. This database contains the FE model information with the calculated output variables.
 
 The Python script `output_data_to_graphs` is used to visualize the evolution of **contact normal forces, displacements and energies** over the simulation time steps. The script reads the corresponding `Dynamic_Job-ID_Energies_CFNs` CSV files to generate these visualizations.
 
@@ -112,3 +110,25 @@ Thus, the workflow for creating the database corresponding to a **95° rocker si
 The same process is repeated for the other rocker sill angles, generating individual `MODELS_DATABASE_{angle}` CSV and XLSX files, where `{angle}` represents the rocker sill angle.
 
 Finally, the `xgb_models_database` script is used to create the complete `XGB_MODELS_DATABASE` database by combining all `MODELS_DATABASE_{angle}` CSV files and removing redundant information. This resulting database contains the design variables' information in **length, angle and thickness**, along with the output variables' information in **peak impact force, total deformation and energy absorbed**.
+
+## 4. Surrogate Model
+
+The previously generated `XGB_MODELS_DATABASE` is used for **surrogate model training and development**.
+
+### 4.1 Correlation Analysis
+
+Correlation analysis is performed to investigate the strength and significance of the relationships between the design variables in **angle and thickness** and the output variables in **peak impact forces and energy absorption**. The resulting diagonal correlation matrix is illustrated in the figure {correlation matrix}.
+
+### 4.2 XGBoost Regression Models
+
+A gradient boosting regression framework, **XGBoost**, is used to model the nonlinear relationships between the design variables (input features) and the crashworthiness metrics (output features). Individual regression models are developed to predict **peak impact force, energy absorption and total deformation** as functions of the design variables. This was done to accurately capture the nonlinear relationships between the input and different output features.
+
+The XGBoost estimators are constructed using tree-based models, and **mean squared error (MSE)** is used as the loss function. The models are developed using a combination of general parameters, booster parameters and learning-task parameters. Regularization techniques are also applied to reduce the risk of overfitting. Given the number of available hyperparameters, **GridSearch** is used for hyperparameter tuning. The regression performance of the estimators is evaluated using **R² score, mean absolute error (MAE), mean squared error (MSE), root mean squared error (RMSE) and mean absolute percentage error (MAPE)**. The model performance is further evaluated by studying the fit between true and predicted values, and by generating residual plots to investigate potential bias.
+
+### 4.3 Surrogate Model Deployment
+
+The Python script `nn_metamodel_deploy` stored in the `surrogate_model` folder reads and preprocesses the `XGB_MODELS_DATABASE` for surrogate model development.
+
+The script also generates the correlation matrix and creates two directories, `Models` and `Results`, in which the optimal prediction models and their corresponding results are saved.
+
+The resulting surrogate models predict **peak impact force, energy absorption and total deformation** as functions of the **rocker sill angle and thickness**. These prediction models are subsequently used to formulate the optimization function.
