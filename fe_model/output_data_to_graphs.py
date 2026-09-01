@@ -1,3 +1,7 @@
+########################################################################################################################################################
+# Created by Nikhil Myadam
+########################################################################################################################################################
+
 # File to automate the data parsing of output files (i.e. excel files of energies and contact/reaction forces) and create the required graphs
 
 import pandas as pd
