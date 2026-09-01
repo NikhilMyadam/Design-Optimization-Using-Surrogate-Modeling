@@ -130,11 +130,9 @@ The XGBoost estimators are constructed using tree-based models, and **mean squar
 
 ### 4.3 Surrogate Model Deployment
 
-The Python script `nn_metamodel_deploy` stored in the `surrogate_model` folder reads and preprocesses the `XGB_MODELS_DATABASE` for surrogate model development.
+The Python script `nn_metamodel_deploy` stored in the `surrogate_model` folder reads and preprocesses the locally saved `XGB_MODELS_DATABASE` for surrogate model development.
 
-The script also generates the correlation matrix and creates two directories, `Models` and `Results`, in which the optimal prediction models and their corresponding results are saved.
-
-The resulting surrogate models predict **peak impact force, energy absorption and total deformation** as functions of the **rocker sill angle and thickness**. These prediction models are subsequently used to formulate the optimization function.
+The script generates the correlation matrix and creates two directories, `Models` and `Results`, in which the optimal prediction models and their corresponding results are saved. The resulting surrogate models predict **peak impact force, energy absorption and total deformation** as functions of the **rocker sill angle and thickness**. These prediction models are subsequently used to formulate the optimization function.
 
 ## 5. Multi-Objective Design Optimization
 
