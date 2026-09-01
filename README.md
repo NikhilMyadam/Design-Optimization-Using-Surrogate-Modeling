@@ -86,7 +86,7 @@ The FE model information used for the representative oblique pole side impact si
 | | Element type for rigid impactor - R3D4 Rigid elements |
 | | Element size for rigid impactor - 15 mm |
 | **Simulation Time** | 90 ms |
-| **Contact Formulation** | Frictional interaction with a 'Hard' contact normal behavior (friction coefficient = 0.25) |
+| **Contact Formulation** | Frictional interaction with a 'Hard' contact normal behavior (friction coefficient = 0.2) |
 | | Tie constraints used to model spot welds |
 | **Boundary Conditions** | Rocker sill assembly ends fixed |
 | | The 100 kg rigid impactor given an impact velocity of 13 m/s |
