@@ -59,18 +59,18 @@ The available design volume of the rocker sill assembly is constrained by the ov
 
 The design of the rocker sill assembly in a BEV is influenced by battery topology, size, its location and other architectural considerations while also adhering to specific design philosophies and vehicle concepts. As a result, the assembly has a constrained design volume, with design choices also inherently restricted by the assembly's role in supporting pillar assemblies and other BIW modules.
 
-Based on benchmarking studies and engineering design knowledge, a **2 m long, 0.1 m wide and 0.2 m high hexagonal-section rocker sill assembly** is investigated in this study.
+Based on benchmarking studies and engineering design knowledge, a **2 m long, 0.1 m wide and 0.2 m high hexagonal-section rocker sill assembly** is investigated in this study. The width and height are denoted as **w** and **h** respectively, as illustrated in figure 2.
 
 Two design variables are considered:
 
-- **Angle** - the geometric parameter defining the shape of the rocker sill section
-- **Thickness** - the component parameter defining the panel thickness
+- **Angle** - the geometric parameter defining the shape of the rocker sill section (denoted by **$\alpha$** as illustrated in figure 2)
+- **Thickness** - the component parameter defining the panel thickness (denoted by **t** as illustrated in figure 2)
 
 The baseline model, including the design variables, is depicted in figure 2.
 
 <p align="center">
-  <img src="images/sill_panel_section.png" alt="Baseline rocker sill panel section" width="350">
-  <img src="images/sill_assembly_section.png" alt="Baseline rocker sill assembly section" width="350">
+  <img src="images/sill_panel_section.png" alt="Baseline rocker sill panel section" width="400">
+  <img src="images/sill_assembly_section.png" alt="Baseline rocker sill assembly section" width="400">
 </p>
 
 <p align="center">
