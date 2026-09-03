@@ -35,14 +35,14 @@ A surrogate-based optimization function is formulated using engineering constrai
 
 Vehicle design is a multidisciplinary process in which numerical simulations play a central role. Among the various disciplines involved, **crashworthiness** is critical to vehicle development because it evaluates the structural performance of the **body-in-white (BIW)** and its ability to protect occupants during a collision.
 
-Among several crash scenarios, lateral vehicle collisions have received increased attention in recent years. According to Euro NCAP, vehicles are tested by impacting them against a fixed, rigid pole with a diameter of 254 mm (10 inches). The vehicle travels at a speed up to and including 32 km/h (20 mph) and is positioned at an angle of 75° formed by the impact reference line with the vertical plane through the centre of gravity of the head of the dummy in the driver seating position. The test condition is depicted in figure 1.
+Among several crash scenarios, lateral vehicle collisions have received increased attention in recent years. According to Euro NCAP, vehicles are tested by impacting them against a fixed, rigid pole with a diameter of 254 mm (10 inches). The vehicle travels at a speed up to and including 32 km/h (20 mph) and is positioned at an angle of 75° formed by the impact reference line with the vertical plane through the centre of gravity of the head of the dummy in the driver seating position [1]. The test condition is depicted in figure 1.
 
 <p align="center">
   <img src="images/test_protocol.png" alt="Oblique pole side impact testing protocol" width="700">
 </p>
 
 <p align="center">
-  <em>Fig 1. Oblique Pole Side Impact Testing Protocol</em>
+  <em>Fig 1. Oblique Pole Side Impact Testing Protocol [1]</em>
 </p>
 
 This study focuses on optimizing the design of a rocker sill assembly for a **Class B battery electric vehicle (BEV)** subjected to an **oblique pole side impact**.
@@ -81,7 +81,7 @@ The baseline model, including the design variables, is depicted in figure 2.
 
 During a side pole impact, several structural components of the BIW, including the rocker sill assembly, act as major load-bearing components. Their structural performance can be evaluated using different crashworthiness metrics.
 
-In this study, **peak impact force (PCF)** and **energy absorption (EA)** are selected as the output variables for optimization. The rocker sill assembly is required to absorb at least **15% of the energy observed during the side pole impact**.
+In this study, **peak impact force (PCF)** and **energy absorption (EA)** are selected as the output variables for optimization. The rocker sill assembly is required to absorb at least **15% of the energy observed during the side pole impact** [2].
 
 The design optimization is performed using a representative structural loading scenario. Crashworthiness evaluation is conducted using FE simulations that mimic a **three-point bending test procedure**, given its similarity to impactor test and drop test validation processes commonly used in industry.
 
@@ -165,7 +165,7 @@ Crashworthiness optimization aims to identify one or more feasible design soluti
 
 ### 5.1 Optimization Problem Formulation
 
-The multi-objective optimization problem is solved using **Pymoo**, a multi-objective optimization framework in Python.
+The multi-objective optimization problem is solved using **Pymoo**, a multi-objective optimization framework in Python [3].
 
 The optimization problem is formulated through the following steps:
 
