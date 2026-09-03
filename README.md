@@ -38,7 +38,7 @@ Vehicle design is a multidisciplinary process in which numerical simulations pla
 Among several crash scenarios, lateral vehicle collisions have received increased attention in recent years. According to Euro NCAP, vehicles are tested by impacting them against a fixed, rigid pole with a diameter of 254 mm (10 inches). The vehicle travels at a speed up to and including 32 km/h (20 mph) and is positioned at an angle of 75° formed by the impact reference line with the vertical plane through the centre of gravity of the head of the dummy in the driver seating position. The test condition is depicted in figure 1.
 
 <p align="center">
-  <img src="images/test_protocol.png" alt="Oblique pole side impact testing protocol" width="800">
+  <img src="images/test_protocol.png" alt="Oblique pole side impact testing protocol" width="700">
 </p>
 
 <p align="center">
@@ -140,7 +140,7 @@ The previously generated `XGB_MODELS_DATABASE` is used for **surrogate model tra
 Correlation analysis is performed to investigate the strength and significance of the relationships between the design variables in **angle and thickness** and the output variables in **peak impact forces and energy absorption**. The resulting diagonal correlation matrix is illustrated in the figure 3.
 
 <p align="center">
-  <img src="images/correlation_matrix.png" alt="Correlation matrix of the design variables and crashworthiness metrics" width="800">
+  <img src="images/correlation_matrix.png" alt="Correlation matrix of the design variables and crashworthiness metrics" width="700">
 </p>
 
 <p align="center">
@@ -198,7 +198,7 @@ The **Non-dominated Sorting Genetic Algorithm II (NSGA-II)** is initialized with
 The non-dominated solutions where the two objectives are given equal importance and considered simultaneously, are also plotted against the FE simulation data to illustrate the resulting **Pareto front**, as shown in figure 5.
 
 <p align="center">
-  <img src="images/pareto_front.png" alt="Pareto front visualization of the multi-objective optimization" width="800">
+  <img src="images/pareto_front.png" alt="Pareto front visualization of the multi-objective optimization" width="700">
 </p>
 
 <p align="center">
