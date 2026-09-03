@@ -35,14 +35,14 @@ A surrogate-based optimization function is formulated using engineering constrai
 
 Vehicle design is a multidisciplinary process in which numerical simulations play a central role. Among the various disciplines involved, **crashworthiness** is critical to vehicle development because it evaluates the structural performance of the **body-in-white (BIW)** and its ability to protect occupants during a collision.
 
-Among several crash scenarios, lateral vehicle collisions have received increased attention in recent years. According to Euro NCAP, vehicles are tested by impacting them against a fixed, rigid pole with a diameter of 254 mm (10 inches). The vehicle travels at a speed up to and including 32 km/h (20 mph) and is positioned at an angle of 75° formed by the impact reference line with the vertical plane through the centre of gravity of the head of the dummy in the driver seating position [[1]](#ref1). The test condition is depicted in figure 1.
+Among several crash scenarios, lateral vehicle collisions have received increased attention in recent years. According to Euro NCAP, vehicles are tested by impacting them against a fixed, rigid pole with a diameter of 254 mm (10 inches). The vehicle travels at a speed up to and including 32 km/h (20 mph) and is positioned at an angle of 75° formed by the impact reference line with the vertical plane through the centre of gravity of the head of the dummy in the driver seating position. The test condition is depicted in figure 1 [[1]](#ref1).
 
 <p align="center">
   <img src="images/test_protocol.png" alt="Oblique pole side impact testing protocol" width="700">
 </p>
 
 <p align="center">
-  <em>Fig 1. Oblique Pole Side Impact Testing Protocol [[1]](#ref1)</em>
+  <em>Fig 1. Oblique Pole Side Impact Testing Protocol</em>
 </p>
 
 This study focuses on optimizing the design of a rocker sill assembly for a **Class B battery electric vehicle (BEV)** subjected to an **oblique pole side impact**.
@@ -222,7 +222,6 @@ I would like to express my sincere gratitude to Prof. Dr.-Ing. Marcus Stoffel fo
 I would also like to acknowledge the Institute of General Mechanics (IAM) and RWTH Aachen University for providing the academic environment and resources that enabled this research.
 
 ## 8. References
-
 <a id="ref1"></a>
 1. Euro NCAP, Oblique pole side impact testing protocol, Online: https://cdn.euroncap.com/cars/assets/euro_ncap_pole_protocol_oblique_impact_v72_098f0198b5.pdf, Access: December 2023
 
