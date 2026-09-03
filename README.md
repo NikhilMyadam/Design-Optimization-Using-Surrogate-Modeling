@@ -69,8 +69,8 @@ Two design variables are considered:
 The baseline model, including the design variables, is depicted in figure 2.
 
 <p align="center">
-  <img src="images/sill_panel_section.png" alt="Baseline rocker sill panel section">
-  <img src="images/sill_assembly_section.png" alt="Baseline rocker sill assembly section">
+  <img src="images/sill_panel_section.png" alt="Baseline rocker sill panel section" width="350">
+  <img src="images/sill_assembly_section.png" alt="Baseline rocker sill assembly section" width="350">
 </p>
 
 <p align="center">
