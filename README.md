@@ -222,3 +222,9 @@ I would like to express my sincere gratitude to Prof. Dr.-Ing. Marcus Stoffel fo
 I would also like to acknowledge the Institute of General Mechanics (IAM) and RWTH Aachen University for providing the academic environment and resources that enabled this research.
 
 ## 8. References
+
+1. Euro NCAP, Oblique pole side impact testing protocol, Online: https://cdn.euroncap.com/cars/assets/euro_ncap_pole_protocol_oblique_impact_v72_098f0198b5.pdf, Access: December 2023
+
+2. Xia, D., Pan, L., Di, S., Hu, T., Zhang, J. (2022). Crashworthiness Characteristics and Structural Optimization of Electric Vehicles’ Side Pole Impact. In: Proceedings of China SAE Congress 2020: Selected Papers. Lecture Notes in Electrical Engineering, vol 769. Springer, Singapore, pp. 541–553. https://doi.org/10.1007/978-981-16-2090-4_33
+
+3. Blank, J. and Deb, K., "Pymoo: Multi-Objective Optimization in Python," IEEE Access, vol. 8, pp. 89497-89509, 2020. https://doi.org/10.1109/ACCESS.2020.2990567
