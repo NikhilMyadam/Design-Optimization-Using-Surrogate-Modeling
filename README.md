@@ -38,7 +38,7 @@ Vehicle design is a multidisciplinary process in which numerical simulations pla
 Among several crash scenarios, lateral vehicle collisions have received increased attention in recent years. According to Euro NCAP, vehicles are tested by impacting them against a fixed, rigid pole with a diameter of 254 mm (10 inches). The vehicle travels at a speed up to and including 32 km/h (20 mph) and is positioned at an angle of 75° formed by the impact reference line with the vertical plane through the centre of gravity of the head of the dummy in the driver seating position. The test condition is depicted in figure 1.
 
 <p align="center">
-  <img src="images/test_protocol.png" alt="Oblique pole side impact testing protocol">
+  <img src="images/test_protocol.png" alt="Oblique pole side impact testing protocol" width="800">
 </p>
 
 <p align="center">
@@ -63,7 +63,7 @@ Based on benchmarking studies and engineering design knowledge, a **2 m long, 0.
 
 Two design variables are considered:
 
-- **Angle** - the geometric parameter defining the shape of the rocker sill section (denoted by **\alpha** as illustrated in figure 2)
+- **Angle** - the geometric parameter defining the shape of the rocker sill section (denoted by **&alpha** as illustrated in figure 2)
 - **Thickness** - the component parameter defining the panel thickness (denoted by **t** as illustrated in figure 2)
 
 The baseline model, including the design variables, is depicted in figure 2.
