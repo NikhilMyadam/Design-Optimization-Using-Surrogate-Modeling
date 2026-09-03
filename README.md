@@ -66,7 +66,16 @@ Two design variables are considered:
 - **Angle** - the geometric parameter defining the shape of the rocker sill section
 - **Thickness** - the component parameter defining the panel thickness
 
-The baseline model, including the design variables, is depicted in {baseline rocker sill FE model}.
+The baseline model, including the design variables, is depicted in figure 2.
+
+<p align="center">
+  <img src="images/sill_panel_section.png" alt="Baseline rocker sill panel section">
+  <img src="images/sill_assembly_section.png" alt="Baseline rocker sill assembly section">
+</p>
+
+<p align="center">
+  <em>Fig 2. Baseline Rocker Sill Assembly FE Model</em>
+</p>
 
 ### 3.2 Crashworthiness Metrics
 
