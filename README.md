@@ -63,7 +63,7 @@ Based on benchmarking studies and engineering design knowledge, a **2 m long, 0.
 
 Two design variables are considered:
 
-- **Angle** - the geometric parameter defining the shape of the rocker sill section (denoted by **$\alpha$** as illustrated in figure 2)
+- **Angle** - the geometric parameter defining the shape of the rocker sill section (denoted by **\alpha** as illustrated in figure 2)
 - **Thickness** - the component parameter defining the panel thickness (denoted by **t** as illustrated in figure 2)
 
 The baseline model, including the design variables, is depicted in figure 2.
