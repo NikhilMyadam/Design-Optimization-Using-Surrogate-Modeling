@@ -215,4 +215,10 @@ The final design space and objective-space results provide a set of feasible roc
 
 ## 7. Acknowledgements
 
+The work presented in this research project was conducted at the Institute of General Mechanics (IAM), RWTH Aachen University.
+
+I would like to express my sincere gratitude to Prof. Dr.-Ing. Marcus Stoffel for providing me with the opportunity to conduct this research under his guidance. I am sincerely grateful to my supervisor, M.Sc. Aditya Borse, for his support in formulating this research problem and for his continuous guidance throughout the project. His methodical and structured approach was instrumental in developing an appropriate research methodology and encouraged rigorous adherence to scientific practices.
+
+I would also like to acknowledge the Institute of General Mechanics (IAM) and RWTH Aachen University for providing the academic environment and resources that enabled this research.
+
 ## 8. References
