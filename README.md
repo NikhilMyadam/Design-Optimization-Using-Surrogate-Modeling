@@ -63,7 +63,7 @@ Based on benchmarking studies and engineering design knowledge, a **2 m long, 0.
 
 Two design variables are considered:
 
-- **Angle** - the geometric parameter defining the shape of the rocker sill section (denoted by **&alpha** as illustrated in figure 2)
+- **Angle** - the geometric parameter defining the shape of the rocker sill section (denoted by **$\alpha$** as illustrated in figure 2)
 - **Thickness** - the component parameter defining the panel thickness (denoted by **t** as illustrated in figure 2)
 
 The baseline model, including the design variables, is depicted in figure 2.
@@ -137,7 +137,15 @@ The previously generated `XGB_MODELS_DATABASE` is used for **surrogate model tra
 
 ### 4.1 Correlation Analysis
 
-Correlation analysis is performed to investigate the strength and significance of the relationships between the design variables in **angle and thickness** and the output variables in **peak impact forces and energy absorption**. The resulting diagonal correlation matrix is illustrated in the figure {correlation matrix}.
+Correlation analysis is performed to investigate the strength and significance of the relationships between the design variables in **angle and thickness** and the output variables in **peak impact forces and energy absorption**. The resulting diagonal correlation matrix is illustrated in the figure 3.
+
+<p align="center">
+  <img src="images/correlation_matrix.png" alt="Correlation matrix of the design variables and crashworthiness metrics" width="800">
+</p>
+
+<p align="center">
+  <em>Fig 3. Correlation Matrix</em>
+</p>
 
 ### 4.2 XGBoost Regression Models
 
@@ -176,9 +184,26 @@ The two input variables, **angle and thickness**, together with their lower and 
 
 ### 5.3 Pareto-Optimal Solutions
 
-The **Non-dominated Sorting Genetic Algorithm II (NSGA-II)** is initialized with defined termination criteria to solve the multi-objective optimization problem. The resulting optimal input-feature combinations and their corresponding objective function values are plotted to illustrate the **design space** and **feasible objective space**, as shown in figures {Design Space} and {Objective Space}, respectively.
+The **Non-dominated Sorting Genetic Algorithm II (NSGA-II)** is initialized with defined termination criteria to solve the multi-objective optimization problem. The resulting optimal input-feature combinations and their corresponding objective function values are plotted to illustrate the **design space** and **feasible objective space**, as shown in figure 4.
 
-The non-dominated solutions where the two objectives are given equal importance and considered simultaneously, are also plotted against the FE simulation data to illustrate the resulting **Pareto front**, as shown in figure {Pareto front visualization}.
+<p align="center">
+  <img src="images/design_space.png" alt="Design space of the multi-objective optimization" width="400">
+  <img src="images/objective_space.png" alt="Feasible objective space of the multi-objective optimization" width="400">
+</p>
+
+<p align="center">
+  <em>Fig 4. Multi-Objective Optimization Results</em>
+</p>
+
+The non-dominated solutions where the two objectives are given equal importance and considered simultaneously, are also plotted against the FE simulation data to illustrate the resulting **Pareto front**, as shown in figure 5.
+
+<p align="center">
+  <img src="images/pareto_front.png" alt="Pareto front visualization of the multi-objective optimization" width="800">
+</p>
+
+<p align="center">
+  <em>Fig 5. Pareto Front Visualization</em>
+</p>
 
 ## 6. Project Outcome
 
