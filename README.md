@@ -35,7 +35,7 @@ A surrogate-based optimization function is formulated using engineering constrai
 
 Vehicle design is a multidisciplinary process in which numerical simulations play a central role. Among the various disciplines involved, **crashworthiness** is critical to vehicle development because it evaluates the structural performance of the **body-in-white (BIW)** and its ability to protect occupants during a collision.
 
-Among several crash scenarios, lateral vehicle collisions have received increased attention in recent years. According to Euro NCAP, vehicles are tested by impacting them against a fixed, rigid pole with a diameter of 254 mm (10 inches). The vehicle travels at a speed up to and including 32 km/h (20 mph) and is positioned at an angle of 75° formed by the impact reference line with the vertical plane through the centre of gravity of the head of the dummy in the driver seating position. The test condition is depicted in {test condition}.
+Among several crash scenarios, lateral vehicle collisions have received increased attention in recent years. According to Euro NCAP, vehicles are tested by impacting them against a fixed, rigid pole with a diameter of 254 mm (10 inches). The vehicle travels at a speed up to and including 32 km/h (20 mph) and is positioned at an angle of 75° formed by the impact reference line with the vertical plane through the centre of gravity of the head of the dummy in the driver seating position. The test condition is depicted in ![Oblique pole side impact testing protocol](images/test_protocol.png).
 
 This study focuses on optimizing the design of a rocker sill assembly for a **Class B battery electric vehicle (BEV)** subjected to an **oblique pole side impact**.
 
