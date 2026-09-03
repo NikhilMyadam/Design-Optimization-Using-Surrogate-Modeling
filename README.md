@@ -35,14 +35,14 @@ A surrogate-based optimization function is formulated using engineering constrai
 
 Vehicle design is a multidisciplinary process in which numerical simulations play a central role. Among the various disciplines involved, **crashworthiness** is critical to vehicle development because it evaluates the structural performance of the **body-in-white (BIW)** and its ability to protect occupants during a collision.
 
-Among several crash scenarios, lateral vehicle collisions have received increased attention in recent years. According to Euro NCAP, vehicles are tested by impacting them against a fixed, rigid pole with a diameter of 254 mm (10 inches). The vehicle travels at a speed up to and including 32 km/h (20 mph) and is positioned at an angle of 75° formed by the impact reference line with the vertical plane through the centre of gravity of the head of the dummy in the driver seating position [1]. The test condition is depicted in figure 1.
+Among several crash scenarios, lateral vehicle collisions have received increased attention in recent years. According to Euro NCAP, vehicles are tested by impacting them against a fixed, rigid pole with a diameter of 254 mm (10 inches). The vehicle travels at a speed up to and including 32 km/h (20 mph) and is positioned at an angle of 75° formed by the impact reference line with the vertical plane through the centre of gravity of the head of the dummy in the driver seating position [[1]](#ref1). The test condition is depicted in figure 1.
 
 <p align="center">
   <img src="images/test_protocol.png" alt="Oblique pole side impact testing protocol" width="700">
 </p>
 
 <p align="center">
-  <em>Fig 1. Oblique Pole Side Impact Testing Protocol [1]</em>
+  <em>Fig 1. Oblique Pole Side Impact Testing Protocol [[1]](#ref1)</em>
 </p>
 
 This study focuses on optimizing the design of a rocker sill assembly for a **Class B battery electric vehicle (BEV)** subjected to an **oblique pole side impact**.
@@ -81,7 +81,7 @@ The baseline model, including the design variables, is depicted in figure 2.
 
 During a side pole impact, several structural components of the BIW, including the rocker sill assembly, act as major load-bearing components. Their structural performance can be evaluated using different crashworthiness metrics.
 
-In this study, **peak impact force (PCF)** and **energy absorption (EA)** are selected as the output variables for optimization. The rocker sill assembly is required to absorb at least **15% of the energy observed during the side pole impact** [2].
+In this study, **peak impact force (PCF)** and **energy absorption (EA)** are selected as the output variables for optimization. The rocker sill assembly is required to absorb at least **15% of the energy observed during the side pole impact** [[2]](#ref2).
 
 The design optimization is performed using a representative structural loading scenario. Crashworthiness evaluation is conducted using FE simulations that mimic a **three-point bending test procedure**, given its similarity to impactor test and drop test validation processes commonly used in industry.
 
@@ -165,7 +165,7 @@ Crashworthiness optimization aims to identify one or more feasible design soluti
 
 ### 5.1 Optimization Problem Formulation
 
-The multi-objective optimization problem is solved using **Pymoo**, a multi-objective optimization framework in Python [3].
+The multi-objective optimization problem is solved using **Pymoo**, a multi-objective optimization framework in Python [[3]](#ref3).
 
 The optimization problem is formulated through the following steps:
 
@@ -223,8 +223,11 @@ I would also like to acknowledge the Institute of General Mechanics (IAM) and RW
 
 ## 8. References
 
+<a id="ref1"></a>
 1. Euro NCAP, Oblique pole side impact testing protocol, Online: https://cdn.euroncap.com/cars/assets/euro_ncap_pole_protocol_oblique_impact_v72_098f0198b5.pdf, Access: December 2023
 
+<a id="ref2"></a>
 2. Xia, D., Pan, L., Di, S., Hu, T., Zhang, J. (2022). Crashworthiness Characteristics and Structural Optimization of Electric Vehicles’ Side Pole Impact. In: Proceedings of China SAE Congress 2020: Selected Papers. Lecture Notes in Electrical Engineering, vol 769. Springer, Singapore, pp. 541–553. https://doi.org/10.1007/978-981-16-2090-4_33
 
+<a id="ref3"></a>
 3. Blank, J. and Deb, K., "Pymoo: Multi-Objective Optimization in Python," IEEE Access, vol. 8, pp. 89497-89509, 2020. https://doi.org/10.1109/ACCESS.2020.2990567
