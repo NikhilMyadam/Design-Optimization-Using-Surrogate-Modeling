@@ -126,7 +126,7 @@ Thus, the workflow for creating the database corresponding to a **95° rocker si
 
 The same process is repeated for the other rocker sill angles, generating individual `MODELS_DATABASE_{angle}` CSV and XLSX files, where `{angle}` represents the rocker sill angle.
 
-Finally, the `xgb_models_database` script is used to create the complete `XGB_MODELS_DATABASE` database by combining all `MODELS_DATABASE_{angle}` CSV files and removing redundant information. This resulting database contains the design variables' information in **length, angle and thickness**, along with the output variables' information in **peak impact force, total deformation and energy absorbed**.
+Finally, the `xgb_models_database` script is used to create the complete `XGB_MODELS_DATABASE` database by combining all `MODELS_DATABASE_{angle}` CSV files and removing redundant information. This resulting database contains the design variables' information in **length, angle and thickness**, along with the output variables' information in **peak impact force, total deformation and energy absorbed**. This processed FE simulation dataset is available in the `data` folder.  
 
 > **Note - Working directory organization:**  
 > It is recommended to maintain a separate working directory for each rocker sill angle investigated (for example, `Model_Data_95degrees`, `Model_Data_96degrees`, etc.). The corresponding Abaqus FE model files, output database (`.odb`) files, FE job output CSV files and generated model databases can then be stored within their respective angle-specific directories. This keeps the simulation data for each rocker sill angle organized and prevents files generated from different sets of FE simulations from being mixed.
