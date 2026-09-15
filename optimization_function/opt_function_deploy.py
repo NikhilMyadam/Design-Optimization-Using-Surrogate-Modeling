@@ -4,12 +4,6 @@
 
 # Multi-objective optimization function - Pymoo
 
-# Tips to keep in mind - 
-
-# Pymoo considers pure minimization problems for optimization
-# All constraint functions need to be formulated as a less-than-equal-to constraint
-# Normalization of constraints recommended to give equal importance to each one of them
-
 #######################################################################################################################################################################
 # Import necessary modules and libraries
 #######################################################################################################################################################################
