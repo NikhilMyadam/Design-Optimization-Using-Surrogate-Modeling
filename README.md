@@ -1,4 +1,4 @@
-# Multi-Objective Design Optimization using Surrogate Modeling
+# Multi-Objective Design Optimization Using Surrogate Modeling
 
 ## Table of Contents
 
