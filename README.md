@@ -1,4 +1,4 @@
-# Multi-Objective Design Optimization of a Vehicle Rocker Sill Assembly
+# Multi-Objective Design Optimization using Surrogate Modeling
 
 ## Table of Contents
 
