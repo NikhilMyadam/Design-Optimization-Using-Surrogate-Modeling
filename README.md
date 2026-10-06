@@ -1,5 +1,7 @@
 # Multi-Objective Design Optimization Using Surrogate Modeling
 
+This research project was conducted as part of my Mini Thesis at the Institute of General Mechanics (IAM), RWTH Aachen University
+
 ## Table of Contents
 
 [1. Project Description](#1-project-description)<br><br>
@@ -25,7 +27,7 @@
 
 ## 1. Project Description
 
-This project investigates the optimal design configurations of a **vehicle rocker sill assembly** under the **European New Car Assessment Programme (Euro NCAP) oblique pole side impact crashworthiness requirements**.
+This repository contains the computational framework and research outcomes developed as part of my Mini Thesis at the Institute of General Mechanics (IAM), RWTH Aachen University. The project investigates the optimal design configurations of a **vehicle rocker sill assembly** under the **European New Car Assessment Programme (Euro NCAP) oblique pole side impact crashworthiness requirements**.
 
 The dynamic bending performance of the rocker sill assembly is investigated using a **multi-objective optimization approach** that combines physics-based **finite element (FE) simulations** with **surrogate modeling techniques**.
 
