@@ -1,6 +1,6 @@
 # Multi-Objective Design Optimization Using Surrogate Modeling
 
-This research project was conducted as part of my Mini Thesis at the Institute of General Mechanics (IAM), RWTH Aachen University
+This research project was conducted as part of my Mini Thesis at the Institute of General Mechanics (IAM), RWTH Aachen University.
 
 ## Table of Contents
 
@@ -219,7 +219,7 @@ The final design space and objective-space results provide a set of feasible roc
 
 The work presented in this research project was conducted at the Institute of General Mechanics (IAM), RWTH Aachen University.
 
-I would also like to acknowledge the Institute of General Mechanics (IAM) and RWTH Aachen University for providing the academic environment and resources that enabled this research.
+I would like to acknowledge the Institute of General Mechanics (IAM) and RWTH Aachen University for providing the academic environment and resources that enabled this research.
 
 ## 8. References
 
